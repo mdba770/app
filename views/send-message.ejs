@@ -1,0 +1,20 @@
+<%- include('./includes/header.ejs') %>
+   <%- include('./includes/navigation.ejs') %>
+
+    <main>
+        <form class="product-form" action="/send-message" method="POST">
+            
+            <div class="form-control">
+                <label for="message">Message</label>
+                <textarea name="message" id="message"  rows="5"></textarea>
+            </div>
+
+            <div class="form-control">
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="phone" id="phone"  value="">
+            </div>
+            
+            <button class="btn" type="submit">Send Message</button>
+        </form>
+    </main>
+<%- include('./includes/footer.ejs') %>
