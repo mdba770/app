@@ -17,7 +17,7 @@ app.use(messageRoutes);
 //DB
 mongoose
     .connect(
-        'mongodb+srv://julia:0utLbe4oifmYib1N@cluster0-acecb.mongodb.net/whatsapp',
+        'mongodb://127.0.0.1/whatsapp',
         { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true }
     )
     .then(result => {
