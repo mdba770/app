@@ -1,6 +1,6 @@
 const Message = require('../models/message');
-const accountSid = 'accountSid';
-const authToken = 'authToken';
+const accountSid = '_accountSid';
+const authToken = '_authToken';
 const client = require('twilio')(accountSid, authToken);
 
 exports.getSendMessage = (req, res, next) => {
